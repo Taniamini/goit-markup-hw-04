@@ -247,13 +247,14 @@ img {
 
 .about-list {
   display: flex;
+  gap: 30px;
 }
 .about-item {
   width: 270px;
 }
-.about-item:not(:last-child) {
+/* або .about-item:not(:last-child) {
   margin-right: 30px;
-}
+} */
 
 .about-title {
   margin-bottom: 10px;
@@ -289,10 +290,11 @@ img {
 }
 .work-list {
   display: flex;
+  gap: 30px;
 }
-.work-item:not(:last-child) {
+/* або .work-item:not(:last-child) {
   margin-right: 30px;
-}
+} */
 
 /* Team section */
 .team {
@@ -300,6 +302,7 @@ img {
 }
 .team-list {
   display: flex;
+  gap: 30px;
 }
 
 .team-main-title {
@@ -338,15 +341,14 @@ img {
   padding-left: 30px;
 }
 .team-item {
-  margin-right: 30px;
   background: var(--second-cl);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
-.team-item:last-child {
+/* або дописати маржин 30 та .team-item:last-child {
   margin-right: 0;
-}
+} */
 
 /* Styles for portfolio */
 
@@ -354,11 +356,12 @@ img {
 .filter-list {
   display: flex;
   justify-content: center;
+  gap: 8px;
   margin-bottom: 50px;
 }
-.filter-item:not(:last-child) {
+/* або .filter-item:not(:last-child) {
   margin-right: 8px;
-}
+} */
 
 .filter-btn {
   padding-top: 6px;
