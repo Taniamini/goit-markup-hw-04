@@ -393,6 +393,7 @@ img {
 .project-list {
   display: flex;
   flex-wrap: wrap;
+  gap: 30px;
 }
 
 .project-title {
@@ -418,15 +419,13 @@ img {
   border-bottom: 1px solid var(--item-bg-cl);
   border-left: 1px solid var(--item-bg-cl);
 }
-.project-item {
+/* або так .project-item {
   margin-right: 30px;
   margin-bottom: 30px;
-
-  width: 370px;
 }
 .project-item:nth-child(3n) {
   margin-right: 0;
 }
 .project-item:nth-last-child(-n + 3) {
   margin-bottom: 0;
-}
+} */
