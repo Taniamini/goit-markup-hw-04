@@ -208,10 +208,9 @@ img {
 }
 
 .hero-btn {
-  padding-top: 10px;
-  padding-right: 32px;
-  padding-bottom: 10px;
-  padding-left: 32px;
+  min-width: 200px;
+  min-width: 50px;
+  padding: 10px 32px;
 
   font-family: inherit;
   cursor: pointer;
@@ -364,10 +363,9 @@ img {
 } */
 
 .filter-btn {
-  padding-top: 6px;
-  padding-right: 22px;
-  padding-bottom: 6px;
-  padding-left: 22px;
+  max-width: 145px;
+  min-width: 73px;
+  padding: 6px 22px;
 
   font-family: inherit;
   cursor: pointer;
