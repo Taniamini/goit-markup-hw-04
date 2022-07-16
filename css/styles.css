@@ -12,6 +12,10 @@
   --bg-cl: #2f303a;
   --item-bg-cl: #eeeeee;
   --bg-btn-cl: #f5f4fa;
+  /* other */
+  --items: 3;
+  --indent-30: 30px;
+  --indent-50: 50px;
 }
 
 body {
@@ -93,7 +97,7 @@ img {
 
 .nav-list {
   display: flex;
-  gap: 50px;
+  gap: var(--indent-50);
 
   font-weight: 500;
   font-size: 14px;
@@ -121,7 +125,7 @@ img {
 
 .header-list {
   display: flex;
-  gap: 50px;
+  gap: var(--indent-50);
 }
 
 .header-contacts-item {
@@ -159,6 +163,7 @@ img {
 
 .footer-address {
   margin-top: 20px;
+
   font-style: inherit;
   font-size: 14px;
   line-height: 1.7;
@@ -246,7 +251,7 @@ img {
 
 .about-list {
   display: flex;
-  gap: 30px;
+  gap: var(--indent-30);
 }
 .about-item {
   width: 270px;
@@ -289,7 +294,7 @@ img {
 }
 .work-list {
   display: flex;
-  gap: 30px;
+  gap: var(--indent-30);
 }
 /* або .work-item:not(:last-child) {
   margin-right: 30px;
@@ -301,7 +306,7 @@ img {
 }
 .team-list {
   display: flex;
-  gap: 30px;
+  gap: var(--indent-30);
 }
 
 .team-main-title {
@@ -393,8 +398,35 @@ img {
 .project-list {
   display: flex;
   flex-wrap: wrap;
-  gap: 30px;
+  gap: var(--indent-30);
 }
+
+.project-item {
+  flex-basis: calc((100% - var(--indent-30) * (var(--items) - 1)) / var(--items));
+}
+
+.project-block {
+  padding-top: 20px;
+  padding-right: 24px;
+  padding-bottom: 20px;
+  padding-left: 24px;
+
+  border: 1px solid var(--item-bg-cl);
+  border-top: none;
+  /* або  border-right: 1px solid var(--item-bg-cl);
+  border-bottom: 1px solid var(--item-bg-cl);
+  border-left: 1px solid var(--item-bg-cl); */
+}
+/* або так .project-item {
+  margin-right: 30px;
+  margin-bottom: 30px;
+}
+.project-item:nth-child(3n) {
+  margin-right: 0;
+}
+.project-item:nth-last-child(-n + 3) {
+  margin-bottom: 0;
+} */
 
 .project-title {
   font-weight: 700;
@@ -410,22 +442,3 @@ img {
   letter-spacing: 0.03em;
   color: var(--txt-cl);
 }
-.project-block {
-  padding-top: 20px;
-  padding-right: 24px;
-  padding-bottom: 20px;
-  padding-left: 24px;
-  border-right: 1px solid var(--item-bg-cl);
-  border-bottom: 1px solid var(--item-bg-cl);
-  border-left: 1px solid var(--item-bg-cl);
-}
-/* або так .project-item {
-  margin-right: 30px;
-  margin-bottom: 30px;
-}
-.project-item:nth-child(3n) {
-  margin-right: 0;
-}
-.project-item:nth-last-child(-n + 3) {
-  margin-bottom: 0;
-} */
