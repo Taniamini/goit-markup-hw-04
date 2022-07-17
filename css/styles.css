@@ -14,8 +14,7 @@
   --bg-btn-cl: #f5f4fa;
   /* other */
   --items: 3;
-  --indent-30: 30px;
-  --indent-50: 50px;
+  --indent: 30px;
 }
 
 body {
@@ -64,7 +63,16 @@ img {
   padding-bottom: 94px;
 }
 
-/* Header */
+.card-set {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--indent);
+}
+.card-set-item {
+  flex-basis: calc((100% - var(--indent) * (var(--items) - 1)) / var(--items));
+}
+
+/* Styles for Header */
 .header {
   border-bottom: 1px solid #ececec;
 }
@@ -97,7 +105,7 @@ img {
 
 .nav-list {
   display: flex;
-  gap: var(--indent-50);
+  gap: 50px;
 
   font-weight: 500;
   font-size: 14px;
@@ -125,7 +133,7 @@ img {
 
 .header-list {
   display: flex;
-  gap: var(--indent-50);
+  gap: 50px;
 }
 
 .header-contacts-item {
@@ -142,7 +150,7 @@ img {
   padding-bottom: 32px;
 }
 
-/* Footer */
+/* Styles for Footer */
 .footer {
   background-color: var(--bg-cl);
   padding-top: 60px;
@@ -250,9 +258,12 @@ img {
 }
 
 .about-list {
-  display: flex;
-  gap: var(--indent-30);
+  --items: 4;
 }
+/* .about-list {
+  display: flex;
+  gap: var(--indent);
+} */
 .about-item {
   width: 270px;
 }
@@ -292,10 +303,10 @@ img {
   letter-spacing: 0.03em;
   color: var(--main-txt-cl);
 }
-.work-list {
+/* .work-list {
   display: flex;
-  gap: var(--indent-30);
-}
+  gap: var(--indent);
+} */
 /* або .work-item:not(:last-child) {
   margin-right: 30px;
 } */
@@ -305,9 +316,12 @@ img {
   background-color: #f5f4fa;
 }
 .team-list {
-  display: flex;
-  gap: var(--indent-30);
+  --items: 4;
 }
+/* .team-list {
+  display: flex;
+  gap: var(--indent);
+} */
 
 .team-main-title {
   margin-bottom: 50px;
@@ -395,15 +409,16 @@ img {
 }
 
 /* Project list */
-.project-list {
+
+/* або так .project-list {
   display: flex;
   flex-wrap: wrap;
-  gap: var(--indent-30);
-}
+  gap: var(--indent);
+} */
 
-.project-item {
-  flex-basis: calc((100% - var(--indent-30) * (var(--items) - 1)) / var(--items));
-}
+/* .project-item {
+  flex-basis: calc((100% - var(--indent) * (var(--items) - 1)) / var(--items));
+} */
 
 .project-block {
   padding-top: 20px;
