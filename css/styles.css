@@ -264,9 +264,9 @@ img {
   display: flex;
   gap: var(--indent);
 } */
-.about-item {
+/* .about-item {
   width: 270px;
-}
+} */
 /* або .about-item:not(:last-child) {
   margin-right: 30px;
 } */
