@@ -560,3 +560,49 @@ img {
 .socials-link:hover .socials-icon {
   fill: var(--second-cl);
 } */
+
+/*
+  |==============================
+  | Clients section
+  |==============================
+*/
+
+.clients-title {
+  margin-bottom: 50px;
+
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--main-txt-cl);
+}
+
+.clients-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+
+.clients-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 170px;
+  height: 92px;
+  color: rgba(175, 177, 184, 1);
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+}
+
+.clients-link:hover,
+.clients-link:focus {
+  color: var(--accent-txt-cl);
+  border: 1px solid var(--accent-txt-cl);
+  border-radius: 4px;
+}
+
+.clients-icon {
+  fill: currentColor;
+}
