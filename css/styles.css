@@ -75,6 +75,9 @@ img {
 /* Styles for Header */
 .header {
   border-bottom: 1px solid #ececec;
+  /* margin-right: auto;
+  margin-left: auto;
+  max-width: 1600px; */
 }
 
 .header-container {
@@ -152,6 +155,9 @@ img {
 
 /* Styles for Footer */
 .footer {
+  /* margin-right: auto;
+  margin-left: auto;
+  max-width: 1600px; */
   background-color: var(--bg-cl);
   padding-top: 60px;
   padding-bottom: 60px;
@@ -200,10 +206,15 @@ img {
 
 /* Hero section */
 .hero {
-  background-color: var(--bg-cl);
+  margin-right: auto;
+  margin-left: auto;
+  background-color: #c4c4c4;
+  max-width: 1600px;
   text-align: center;
   padding-top: 200px;
   padding-bottom: 200px;
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../images/hero/hero.jpg);
 }
 
 .hero-title {
@@ -234,6 +245,7 @@ img {
   color: #ffffff;
   background: #2196f3;
   border: 0;
+  border-radius: 4px;
 }
 
 .hero-btn:hover,
@@ -314,6 +326,9 @@ img {
 /* Team section */
 .team {
   background-color: #f5f4fa;
+  /* margin-right: auto;
+  margin-left: auto;
+  max-width: 1600px; */
 }
 .team-list {
   --items: 4;
@@ -420,6 +435,12 @@ img {
   flex-basis: calc((100% - var(--indent) * (var(--items) - 1)) / var(--items));
 } */
 
+.project-item:hover,
+.project-item:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
 .project-block {
   padding-top: 20px;
   padding-right: 24px;
@@ -444,6 +465,8 @@ img {
 } */
 
 .project-title {
+  margin-bottom: 4px;
+
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
