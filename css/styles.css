@@ -8,6 +8,7 @@
   --accent-txt-cl: #2196f3;
   --txt-cl: #757575;
   --header-txt-cl: #000000;
+  --footer: rgba(255, 255, 255, 0.6);
   /* bsckground colors */
   --bg-cl: #2f303a;
   --item-bg-cl: #eeeeee;
@@ -141,6 +142,8 @@ img {
 
 .header-list {
   display: flex;
+  align-items: center;
+  justify-content: center;
   gap: 50px;
 }
 
@@ -153,7 +156,8 @@ img {
 }
 
 .header-contacts {
-  display: block;
+  display: flex;
+  align-items: center;
   padding-top: 32px;
   padding-bottom: 32px;
 }
@@ -169,6 +173,12 @@ img {
   margin-left: auto;
   max-width: 1600px; */
   background-color: var(--bg-cl);
+}
+
+.footer-block {
+  display: flex;
+  align-items: baseline;
+  gap: 70px;
   padding-top: 60px;
   padding-bottom: 60px;
 }
@@ -194,6 +204,13 @@ img {
   letter-spacing: 0.03em;
   color: var(--second-cl);
 }
+.footer-contact {
+  font-style: inherit;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: var(--footer);
+}
 .footer-list {
   display: flex;
   flex-direction: column;
@@ -203,13 +220,32 @@ img {
   margin-bottom: 9px;
 } */
 
-.footer-item {
-  color: rgba(255, 255, 255, 0.6);
-}
-
+.footer-contact:hover,
+.footer-contact:focus,
 .footer-address:hover,
 .footer-address:focus {
   color: var(--accent-txt-cl);
+}
+
+/* .address {
+  margin-right: 70px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+} */
+
+/* .icon {
+  padding-top: 72px;
+  padding-bottom: 100px;
+} */
+.footer-title {
+  margin-bottom: 20px;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--second-cl);
 }
 
 /* Styles for html */
@@ -475,8 +511,7 @@ img {
   flex-basis: calc((100% - var(--indent) * (var(--items) - 1)) / var(--items));
 } */
 
-.project-item:hover,
-.project-item:focus {
+.project-item:hover {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
@@ -524,6 +559,78 @@ img {
 /*
   |==============================
   | Socials icons
+  |==============================
+*/
+
+/*
+  |==============================
+  | Header
+  |==============================
+*/
+.header-contacts-icon:hover,
+.header-contacts-icon:focus {
+  color: var(--accent-txt-cl);
+}
+.header-contacts-icon {
+  margin-right: 10px;
+  fill: currentColor;
+}
+
+/*
+  |==============================
+  | Footer
+  |==============================
+*/
+
+.footer-icon-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.footer-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  color: var(--second-cl);
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.footer-link:hover,
+.footer-link:focus {
+  color: var(--second-cl);
+  background-color: var(--accent-txt-cl);
+}
+
+.footer-icon {
+  fill: currentColor;
+}
+
+/*
+  |==============================
+  | About section
+  |==============================
+*/
+.block-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+  width: 270px;
+  height: 120px;
+  background-color: var(--bg-btn-cl);
+  border-radius: 4px;
+}
+.about-icon {
+  background: var(--bg-btn-cl);
+}
+
+/*
+  |==============================
+  | Team section
   |==============================
 */
 .socials {
